@@ -4,7 +4,7 @@ setup(
     name='hidraw-pure',
     description='Pure-python linux hidraw bindings',
     keywords='linux human interface device HID hidraw',
-    version='1.0',
+    version='1.1',
     author='Vincent Pelletier',
     author_email='plr.vincent@gmail.com',
     url='http://github.com/vpelletier/python-hidraw',
