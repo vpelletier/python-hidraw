@@ -33,9 +33,9 @@ _HIDIOCGRAWNAME = lambda len: ioctl_opt.IOC(ioctl_opt.IOC_READ, ord('H'),
     0x04, len)
 _HIDIOCGRAWPHYS = lambda len: ioctl_opt.IOC(ioctl_opt.IOC_READ, ord('H'),
     0x05, len)
-_HIDIOCSFEATURE = lambda len: ioctl_optIOC(
+_HIDIOCSFEATURE = lambda len: ioctl_opt.IOC(
     ioctl_opt.IOC_WRITE|ioctl_opt.IOC_READ, ord('H'), 0x06, len)
-_HIDIOCGFEATURE = lambda len: ioctl_optIOC(
+_HIDIOCGFEATURE = lambda len: ioctl_opt.IOC(
     ioctl_opt.IOC_WRITE|ioctl_opt.IOC_READ, ord('H'), 0x07, len)
 
 HIDRAW_FIRST_MINOR = 0
